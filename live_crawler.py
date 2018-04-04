@@ -62,8 +62,8 @@ def get_matches(url, by_nation=None, by_league=None, by_club=None):
                     status = mv.select_one('div.min').text.strip()
                     if 'Postp.' in status:
                         status = 'Postponed'
-                    ply_home = mv.select_one('div[class="ply name"]').text.strip()
-                    ply_away = mv.select_one('div[class="ply tright name"]').text.strip()
+                    ply_home = mv.select_one('div[class="ply tright name"]').text.strip()
+                    ply_away = mv.select_one('div[class="ply name"]').text.strip()
                     score = mv.select_one('a.scorelink') or mv.select_one('div.sco')
                     if score:
                         score = score.text.strip()
