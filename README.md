@@ -24,6 +24,12 @@ python live_crawler.py
 You can query the result with your preferred nationality, league, date and club like this.
 
 ```
+python live_crawler.py --all
+```
+
+Add all argument to get all match for today. The rest example is to get the matches from preferred criteria.
+
+```
 python live_crawler.py --nation england
 ```
 
@@ -45,7 +51,7 @@ Set tz cookies according you timezone.
 
 ## Authors
 
-* **Yusuf Pradana Gautama** - [yusufgtm](https://github.com/yusufgtm)
+* **Yusuf Pradana Gautama** - [yusufgautama](https://github.com/yusufgautama)
 
 ## License
 
